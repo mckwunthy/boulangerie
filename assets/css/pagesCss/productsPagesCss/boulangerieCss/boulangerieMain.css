@@ -1,0 +1,135 @@
+/* DESKTOP FIRST */
+/* boulangerie container section */
+/* boulangerie-container-section-title-and-content */
+.boulangerie-container-section-title-and-content .product-title {
+    /* font-family: 'Asap', sans-serif; */
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    text-align: center;
+    color: var(--main-color);
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.product-title::first-letter {
+    text-transform: capitalize;
+}
+
+.products-container-content {
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.boulangerie-presentation {
+    border: 5px ridge var(--main-color);
+    margin-top: 20px;
+    border-radius: 150px 150px 0 0;
+}
+
+.boulangerie-presentation-title h3 {
+    /* font-family: 'Asap', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    text-align: center;
+    color: var(--main-color);
+}
+
+.boulangerie-presentation-title h3::first-letter {
+    text-transform: capitalize;
+}
+
+.boulangerie-presentation-laus p {
+    /* font-family: 'Asap', sans-serif; */
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    text-align: center;
+    color: var(--main-color);
+    font-size: 1.2rem;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.boulangerie-presentation-laus p::first-letter {
+    text-transform: capitalize;
+}
+
+.boulangerie-presentation-illustration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+.boulangerie-presentation-illustration .bloc-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.boulangerie-presentation-illustration .bloc-image:hover {
+    transform: scale(1.03);
+}
+
+.boulangerie-presentation-illustration .bloc-image h5 {
+    position: absolute;
+    top: 67%;
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 7px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0.6;
+    /* font-family: 'Asap', sans-serif; */
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    text-align: center;
+    color: var(--main-color-white);
+}
+
+.boulangerie-presentation-illustration .bloc-image img {
+    width: 210px;
+    height: 210px;
+}
+
+/* end boulangerie-container-section-title-and-content */
+
+/* END DESKTOP FIRST */
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1350px) {}
+
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 900px) {}
+
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 427px) {
+
+    .boulangerie-presentation-illustration,
+    .products-container-content,
+    .boulangerie-container-section-title-and-content .product-title {
+        width: 95vw;
+    }
+
+    .slider img {
+        width: 150px;
+    }
+}
+
+/* END MEDIA QUERY */

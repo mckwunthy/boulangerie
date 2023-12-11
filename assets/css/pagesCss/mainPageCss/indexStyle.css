@@ -1,0 +1,689 @@
+/* *****DESKTOP FIRST ***** */
+
+/* bande du haut */
+.top-bande {
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: var(--z-index-bande);
+}
+
+.top-bande p {
+    margin: 0;
+    padding: 5px;
+    color: var(--main-color-white);
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 1.2rem;
+}
+
+/* end bande du haut */
+
+
+/* bloc logo slider et l'animation*/
+.logo {
+    left: 200px;
+    top: 35px;
+    z-index: var(--z-index-logo);
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.slider {
+    height: 300px;
+    width: 80vw;
+    margin: 0 auto;
+    z-index: var(--z-index-slider);
+}
+
+.slider img {
+    height: 266.8px;
+    width: 100%;
+    position: absolute;
+    top: 33.3px;
+    animation: imgSlide 40s linear infinite;
+    opacity: 0;
+}
+
+
+.slider img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.slider img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.slider img:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.slider img:nth-child(5) {
+    animation-delay: 20s;
+}
+
+.slider img:nth-child(6) {
+    animation-delay: 25s;
+}
+
+.slider img:nth-child(7) {
+    animation-delay: 30s;
+}
+
+.slider img:nth-child(8) {
+    animation-delay: 35s;
+}
+
+@keyframes imgSlide {
+
+    0%,
+    20%,
+    100% {
+        opacity: 0;
+    }
+
+    5%,
+    15% {
+        opacity: 1;
+    }
+}
+
+/* end bloc logo slider */
+
+/* menu nav */
+nav {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    z-index: var(--z-index-logo);
+}
+
+nav ul {
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+
+.container-header nav div.burger {
+    display: none;
+}
+
+nav ul li {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li:hover {
+    background-color: var(--main-color-second);
+    color: var(--main-color-gold);
+}
+
+nav ul li a {
+    display: flex;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: var(--main-color-white);
+    text-transform: uppercase;
+}
+
+nav ul li:hover a {
+    color: var(--main-color-gold);
+}
+
+/* end menu nav */
+
+/* section and aside*/
+.container-section-and-aside {
+    width: 80vw;
+    margin: 200px auto 10px;
+    padding-top: 70px;
+}
+
+/* end section and aside */
+
+/* SECTION */
+/* qui sommes nous */
+.qui-sommes-nous {
+    border: 5px solid var(--main-color);
+    border-radius: 20px;
+    padding: 0 0 0 10px;
+    height: 300px;
+}
+
+.qui-sommes-nous .qsn-texte h2 {
+    margin: 0px;
+    text-transform: capitalize;
+    color: var(--main-color-white);
+    background-color: var(--main-color);
+    border-radius: 10px 0 0 0;
+    /* width: 50%; */
+    margin-left: -10px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.qui-sommes-nous .qsn-texte p {
+    margin: 0;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 1.3rem;
+    text-align: justify;
+    padding-right: 10px;
+    color: var(--main-color);
+}
+
+.qui-sommes-nous .qsn-texte p span:first-child {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.qui-sommes-nous .qsn-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 0 15px 15px 0;
+}
+
+/* end qui sommes nous */
+
+/* notre histoire */
+.notre-histoire {
+    border: 5px solid var(--main-color);
+    border-radius: 20px;
+    padding: 0 10px 0 0;
+    height: 300px;
+}
+
+.notre-histoire .nh-texte h2 {
+    margin: 0px;
+    text-transform: capitalize;
+    color: var(--main-color-white);
+    background-color: var(--main-color);
+    width: 100%;
+    border-radius: 0 10px 0 0;
+    text-align: center;
+    /* margin-left: 230px; */
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.notre-histoire .nh-texte p {
+    margin: 0px;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 1.3rem;
+    text-align: justify;
+    padding-left: 10px;
+    color: var(--main-color);
+}
+
+.qui-sommes-nous .qsn-texte p span:first-child {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.notre-histoire .nh-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px 0 0 15px;
+}
+
+/* end notre histoire */
+
+/* nos valeurs */
+
+.nos-valeurs>h2 {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--main-color-white);
+    font-family: 'Asap', sans-serif;
+    /* font-family: 'Dancing Script', cursive; */
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Playpen Sans', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+    margin-bottom: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.nv-box-tout {
+    border: 1px solid var(--main-color);
+    margin-top: 0;
+}
+
+.nv-box {
+    width: 250px;
+
+}
+
+.nv-box h3 {
+    margin: 0 0 0 20px;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: var(--main-color);
+    font-family: 'Asap', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.nv-box p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--main-color);
+    font-family: 'Asap', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    text-align: justify;
+    padding: 5px;
+}
+
+/* end nos valeurs */
+
+/* end SECTION */
+
+/* ASIDE */
+
+.promo p {
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 1.4rem;
+    border: 5px solid var(--main-color);
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.promo p span img {
+    width: 100px;
+}
+
+.promo p span:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--main-color-gold);
+    border-radius: 100px;
+    padding: 10px;
+    float: left;
+    animation: rotation 5s linear infinite forwards;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.divider-aside {
+    border: 1px solid var(--main-color-white);
+    margin: 10px 5px;
+}
+
+.container-aside div.expo img {
+    width: 180px;
+}
+
+
+.horaire-and-boulanger {
+    border: 5px solid var(--main-color);
+    margin: 0 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+    height: auto;
+}
+
+.horaire-ouverture {
+    /* border: 1px solid var(--main-color); */
+    text-align: center;
+}
+
+.horaire-ouverture h3 {
+    background-color: var(--main-color);
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px 0 5px 0;
+    color: var(--main-color-white);
+    text-transform: uppercase;
+}
+
+.horaire-ouverture p {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 1.2rem;
+    padding: 5px;
+    margin: 0;
+}
+
+.horaire-ouverture p::first-letter {
+    text-transform: uppercase;
+}
+
+.container-aside .img-boulanger img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 20px 20px;
+    /* padding: 10px; */
+}
+
+/* end ASIDE */
+
+/* FOOTER */
+.container-footer {
+    padding: 10px 0;
+    height: auto;
+    background-color: var(--main-color);
+}
+
+/* .container-footer>* {
+    margin-bottom: 25px;
+} */
+
+.container-footer>.logo {
+    text-align: center;
+}
+
+.link-commande-and-products a {
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+    color: var(--main-color-white);
+}
+
+.link-commande-and-products a:hover {
+    color: var(--main-color-gold);
+}
+
+.social-network {
+    margin: 0 50px;
+    width: 100px;
+}
+
+.social-network a {
+    font-size: 2rem;
+    color: var(--main-color-white);
+}
+
+.social-network a:hover {
+    color: var(--main-color-gold);
+}
+
+.newsletter {
+    border: 1px solid var(--main-color-white);
+    padding: 10px;
+    color: var(--main-color-white);
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 1.7rem;
+}
+
+.newsletter input {
+    outline: none;
+    border: none;
+}
+
+.newsletter button {
+    outline: none;
+    border: 1px solid var(--main-color-gray);
+    background-color: var(--main-color-gray);
+    color: var(--main-color-white);
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.1rem;
+}
+
+.newsletter button:hover {
+
+    background-color: var(--main-color);
+    color: var(--main-color-gold);
+    border: 1px solid var(--main-color-gold);
+}
+
+.copyright {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: 10px;
+    color: var(--main-color-white);
+}
+
+/* end FOOTER */
+/* ***** END DESKTOP FIRST ***** */
+
+/* MEDIA QUERY */
+
+
+@media screen and (max-width: 1350px) {
+
+    /* logo header */
+    .logo {
+        left: 100px;
+        top: 35px;
+    }
+
+    /* end logo header */
+
+    /* section and aside*/
+    .container-section-and-aside {
+        width: 100vw;
+        margin: 90px auto;
+    }
+
+    /* end section and aside */
+}
+
+@media screen and (max-width: 1100px) {
+
+    /* section */
+    .container-section-and-aside {
+        flex-direction: column;
+        width: 80vw;
+        margin: 90px auto;
+    }
+
+    .container-section {
+        align-items: center;
+    }
+
+    .qui-sommes-nous,
+    .notre-histoire {
+        width: 880px;
+        height: 250px;
+    }
+
+    .qui-sommes-nous .qsn-image img,
+    .notre-histoire .nh-image img {
+        width: 300px;
+        height: 230px;
+    }
+
+    /* end section */
+
+    /* aside */
+    .container-aside {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-aside>div:nth-child(1) {
+        flex: 3;
+    }
+
+    .container-aside>div:nth-child(2) {
+        flex: 1;
+    }
+
+    .container-aside>div:nth-child(4) {
+        flex: 1;
+    }
+
+
+    /* end aside */
+}
+
+@media screen and (max-width: 900px) {
+
+    /* qui somme nous */
+    .qui-sommes-nous,
+    .notre-histoire {
+        width: auto;
+        height: 250px;
+    }
+
+    .qui-sommes-nous p,
+    .notre-histoire p {
+        height: 200px;
+        overflow: auto;
+    }
+
+    .container-aside>div:nth-child(2) {
+        height: 200px;
+    }
+
+    .container-aside>div:nth-child(4) .horaire-ouverture h3 {
+        width: 200px;
+    }
+
+    .container-aside>div:nth-child(4) img {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .qui-sommes-nous,
+    .notre-histoire {
+        height: 250px;
+    }
+
+    .qui-sommes-nous .qsn-image img,
+    .notre-histoire .nh-image img {
+        width: 220px;
+        height: 180px;
+    }
+
+    footer .container-footer .logo,
+    .link-commande-and-products {
+        display: none;
+    }
+
+    .bloc-link-social {
+        margin-left: 10px;
+    }
+
+    /* nav  */
+    .container-header nav ul {
+        display: none;
+    }
+
+    .container-header nav div.burger {
+        display: block;
+        /* width: 50px; */
+        /* height: 50px; */
+        font-size: 2.5rem;
+        color: var(--main-color-white);
+        margin-left: 5px;
+        cursor: pointer;
+        z-index: var(--z-index-bande);
+    }
+
+
+    .container-header nav div.burger:hover+ul {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        width: 200px;
+        margin: -30px 0 0 0;
+        z-index: var(--z-index-bande);
+        margin-top: 0px;
+        animation: naviguateBar 1s linear forwards;
+    }
+
+    @keyframes naviguateBar {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* end nav  */
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .qui-sommes-nous .qsn-image img,
+    .notre-histoire .nh-image img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 427px) {
+
+    .container-aside,
+    .promo {
+        flex-direction: column;
+    }
+
+    .container-aside div.expo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container-aside div.expo img {
+        width: 100%;
+    }
+}
+
+/* END MEDIA QUERY */

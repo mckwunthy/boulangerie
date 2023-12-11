@@ -1,0 +1,167 @@
+/* DESKTOP FIRST */
+.services-container-section {
+    margin: 100px auto;
+}
+
+.services-container-section>* {
+    width: 350px;
+    border: 3px solid var(--main-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-container-section>*>h3 {
+    text-transform: uppercase;
+    color: var(--main-color);
+    /* font-family: 'Asap', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+/* commander en ligne */
+
+.services-commande-ligne p {
+    margin-top: 0;
+}
+
+.services-commande-ligne p>* {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    color: var(--main-color);
+}
+
+.services-commande-ligne p>a i {
+    font-size: 5rem;
+    animation: telRing 300ms linear infinite forwards;
+}
+
+@keyframes telRing {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.services-commande-ligne p>a span {
+    font-size: 2rem;
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.services-commande-ligne p>span {
+    font-size: 1.2rem;
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+    background-color: var(--main-color);
+    padding: 10px 0;
+    color: var(--main-color-white);
+}
+
+.services-commande-ligne p span::first-letter {
+    text-transform: capitalize;
+}
+
+/* end commander en ligne */
+
+/* livraison  */
+.services-livraison p {
+    margin-top: 0;
+}
+
+
+.services-livraison p>* {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    color: var(--main-color);
+}
+
+.services-livraison p>i {
+    font-size: 6.5rem;
+    animation: carRun 2s linear infinite forwards;
+}
+
+@keyframes carRun {
+    from {
+        /* transform: scale(0.5); */
+        margin-left: -150px;
+    }
+
+    to {
+        /* transform: scale(1.1); */
+        margin-left: 150px;
+    }
+}
+
+.services-livraison p span {
+    font-size: 2rem;
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.services-livraison p span::first-letter {
+    text-transform: capitalize;
+}
+
+/* end livraison  */
+/* evenement */
+.services-evenement p {
+    margin-top: 0;
+}
+
+
+.services-evenement p>* {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    color: var(--main-color);
+}
+
+.services-evenement p>i {
+    font-size: 6rem;
+}
+
+
+.services-evenement p span {
+    font-size: 2.2rem;
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.services-livraison p span::first-letter {
+    text-transform: capitalize;
+}
+
+
+/* end evenement */
+/* END DESKTOP FIRST */
+
+/* MEDIA */
+@media screen and (max-width: 427px) {
+    @keyframes carRun {
+        from {
+            /* transform: scale(0.5); */
+            margin-left: -100px;
+        }
+
+        to {
+            /* transform: scale(1.1); */
+            margin-left: 100px;
+        }
+    }
+
+}
+
+/* END MEDIA */

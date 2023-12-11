@@ -1,0 +1,213 @@
+/* DESKTOP FIRST */
+/*HEADER :  bloc-logo-slider-carre */
+.container-header {
+    height: 201px;
+}
+
+.bloc-logo-slider-carre {
+    margin: 0 auto;
+    width: 80vw;
+    /* height: 20vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc-logo-slider-carre div.slider {
+    /* border: 1px solid orange; */
+    width: 167.8px;
+    height: 167.8px;
+    margin: 0;
+}
+
+.bloc-logo-slider-carre div img {
+    width: 167.8px;
+    height: 167.8px;
+}
+
+/* end HEADER : bloc-logo-slider-carre */
+
+/* SECION :products-container-section */
+.products-container-section {
+    margin: 50px auto 0;
+    width: 80vw;
+}
+
+.products-container-section>div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin: 60px auto;
+}
+
+.front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border: 5px ridge var(--main-color);
+    background-color: var(--main-color-white);
+    border-radius: 20px;
+    width: 40vw;
+    height: 40vh;
+    z-index: var(--z-index-front);
+    position: absolute;
+    left: 5%;
+}
+
+.front h2 {
+    text-transform: capitalize;
+    /* font-family: 'Asap', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    color: var(--main-color);
+    margin-top: 0;
+}
+
+.front p::first-letter {
+    text-transform: capitalize;
+}
+
+.front p {
+    /* font-family: 'Asap', sans-serif; */
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 2rem;
+    margin-top: 0;
+    padding: 0 15px;
+}
+
+.front a {
+    /* font-family: 'Asap', sans-serif; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Playpen Sans', cursive; */
+    /* font-family: 'Roboto', sans-serif; */
+    background-color: var(--main-color);
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: var(--main-color-white);
+}
+
+.front a:hover {
+    background-color: var(--main-color-second);
+    color: var(--main-color-gold);
+}
+
+.back {
+    width: 50vw;
+    height: 60vh;
+    border: 5px ridge var(--main-color);
+    border-radius: 20px;
+    z-index: var(--z-index-slider);
+}
+
+.back img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* end SECION :products-container-section */
+
+/* END DESKTOP FIRST */
+
+/* MEDIA */
+@media screen and (max-width: 1350px) {
+
+    /* retrait de 2 bloc image de l'affiche */
+    .bloc-logo-slider-carre div:nth-child(2),
+    .bloc-logo-slider-carre div:nth-child(3) {
+        display: none;
+    }
+
+    /* redimmenssion de  front et back*/
+    .front {
+        height: 35vh;
+    }
+
+    .back {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    /* annulation des marge du paragraphe */
+    .front p,
+    .front h2 {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 900px) {
+
+    /* retrait de 1 bloc image de l'affiche */
+    .bloc-logo-slider-carre div:nth-child(5) {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* retrait de 1 bloc image de l'affiche */
+    .bloc-logo-slider-carre div:nth-child(6) {
+        display: none;
+    }
+
+    /* occupation de 90% de la largeur */
+    .products-container-section {
+        width: 90vw;
+    }
+
+    /* redimmenssion de  front et back*/
+    .front {
+        height: 30vh;
+    }
+
+    .back {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    /* cacher le texte  */
+    .front p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .products-container-section>div {
+        flex-direction: column;
+    }
+
+    /* redimmenssion de  front et back*/
+    .front {
+        height: 30vh;
+        width: 50vw;
+    }
+
+    .back {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .bloc-logo-slider-carre div:nth-child(4) {
+        display: none;
+    }
+
+    .bloc-logo-slider-carre div:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 427px) {}
+
+/* END MEDIA */

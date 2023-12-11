@@ -1,0 +1,15 @@
+:root {
+    --main-color: #53301C;
+    --main-color-second: rgb(99, 64, 35);
+    --main-color-third: #fff0DA;
+    --main-color-teal: teal;
+    --main-color-white: white;
+    --main-color-black: #1d1d1d;
+    --main-color-gray: gray;
+    --main-color-green: green;
+    --main-color-red: red;
+    --main-color-gold: gold;
+    --main-color-yellow: yellow;
+    --main-color-orangered: orangered;
+    --main-color-orangeee: rgb(232, 105, 58);
+}
